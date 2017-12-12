@@ -1,0 +1,7 @@
+Buttonの判定をつけるプログラム。
+〇〇.setInteractive(true);
+    〇〇.onpointend = () => {
+      
+    };
+アラート。
+alert("〇〇")

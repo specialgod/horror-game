@@ -9,9 +9,9 @@ const ASSETS = {
     , kyara1:"/kyara1.png"
     , waku:"/waku.png"
     , tomapiko: 'http://cdn.rawgit.com/phi-jp/phina.js/v0.2.0/assets/images/tomapiko_ss.png'
-    , jibaku: "/jibaku.png"
-    , kaifuku: "/kaifuku.png"
-    , kougeki: "/kougeki.png"
+    , jibaku: "/jibaku-2.png"
+    , kaifuku: "/kaifuku-2.png"
+    , kougeki: "/kougeki-2.png"
   },
 };
 
@@ -252,12 +252,35 @@ phina.define('BattleScene',{
     this.superInit(opt);
     this.backgroundColor = '#000';
     
-    let kougeki = Sprite('kougeki', 500, 500).addChildTo(this);  
-    kougeki.x = 480;
-    kougeki.y = 180;
+    let kougeki = Sprite('kougeki').addChildTo(this);  
+    kougeki.x = 150;
+    kougeki.y = 60;
+    kougeki.setInteractive(true);
+    kougeki.onpointend = () => {
+      alert("攻撃！");
+    };
     
-    // TODO: ボタンの位置を調整する。
-    // TODO: 他のボタン（２個）を追加する。
+    let kaifuku = Sprite('kaifuku').addChildTo(this);  
+    kaifuku.x = 150;
+    kaifuku.y = 260;
+    kaifuku.setInteractive(true);
+    kaifuku.onpointend = () => {
+      alert("回復！")
+    };
+    
+    let jibaku = Sprite('jibaku',).addChildTo(this);  
+    jibaku.x = 150;
+    jibaku.y = 460;
+    jibaku.setInteractive(true);
+    jibaku.onpointend = () => {
+      alert("じばk..(ドーン)")
+    };
+    
+    
+    let kyara1 = Sprite('kyara1', 500, 500).addChildTo(this);  
+    kyara1.x = 600;
+    kyara1.y = 250;
+    
   }
 })
 // メイン処理

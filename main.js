@@ -4,14 +4,14 @@ phina.globalize();
 const ASSETS = {
   image: {
     bg: "http://jsrun.it/assets/a/G/5/Y/aG5YD.png"
-    , home:"/home.png"
-    , START:"/START.png"
-    , kyara1:"/kyara1.png"
-    , waku:"/waku.png"
+    , home:"./home.png"
+    , START:"./START.png"
+    , kyara1:"./kyara1.png"
+    , waku:"./waku.png"
     , tomapiko: 'http://cdn.rawgit.com/phi-jp/phina.js/v0.2.0/assets/images/tomapiko_ss.png'
-    , jibaku: "/jibaku-2.png"
-    , kaifuku: "/kaifuku-2.png"
-    , kougeki: "/kougeki-2.png"
+    , jibaku: "./jibaku-2.png"
+    , kaifuku: "./kaifuku-2.png"
+    , kougeki: "./kougeki-2.png"
   },
 };
 
